@@ -1,2 +1,3 @@
 # Split-and-Rephrase
-Break long English Sentences into simple sentences
+Ref: https://github.com/rui-yan/split-and-rephrase, https://github.com/shreyaUp/Sentence-Simplification
+
