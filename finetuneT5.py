@@ -2,8 +2,8 @@
 fine tune Hugging Face's T5 model
 """
 
-!pip install -q transformers
-!pip install -q sentencepiece
+#!pip install -q transformers==4.2.2
+#!pip install -q sentencepiece==0.1.94
 
 
 import torch
