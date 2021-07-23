@@ -12,7 +12,7 @@ import warnings
 warnings.filterwarnings(action='ignore')
 
 
-PATH = '/content/drive/MyDrive/jar'
+PATH = '/jar'
 
 
 def _format(sentence):
@@ -94,8 +94,7 @@ def return_children(dep_tree, parent):
 
 def create_clause_sentence(clause_dict, dict_of_tree, newclause, output_file):
     xi = 1
-    for index, newclause in sorted(clause_dict.items(),
-                                   key=lambda hoc: hoc[1][-1]):
+    for index, newclause in sorted(clause_dict.items(), key=lambda hoc: hoc[1][-1]):
         if newclause == []:
             continue
         wordclause = dict_of_tree[newclause.pop(0)]['word']

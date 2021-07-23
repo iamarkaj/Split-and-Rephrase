@@ -4,21 +4,20 @@ Format: Adding the target text in front of the source text
         because this is how T5 model was trained for summarization task
 """
 
-!pip install -q unidecode
 import unidecode
 import pandas as pd
 
 
 TRAIN_SAMPLE = 300_000
-TRAIN_SRC    = '/content/drive/MyDrive/split-and-rephrase/data/train.source'
-TRAIN_TARGET = '/content/drive/MyDrive/split-and-rephrase/data/train.target'
-TRAIN_SAVE   = '/content/drive/MyDrive/split-and-rephrase/dataCSV/train300k.csv'
+TRAIN_SRC    = '/data/train.source'
+TRAIN_TARGET = '/data/train.target'
+TRAIN_SAVE   = '/dataCSV/train300k.csv'
 
 
 VALID_SAMPLE = 5_000
-VALID_SRC    = '/content/drive/MyDrive/split-and-rephrase/data/validation.source'
-VALID_TARGET = '/content/drive/MyDrive/split-and-rephrase/data/validation.target'
-VALID_SAVE   = '/content/drive/MyDrive/split-and-rephrase/dataCSV/val5k.csv'
+VALID_SRC    = '/data/validation.source'
+VALID_TARGET = '/data/validation.target'
+VALID_SAVE   = '/dataCSV/val5k.csv'
 
 
 def save_to_csv(SRC, TARGET, SAMPLE, SAVE):

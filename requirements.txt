@@ -1,0 +1,4 @@
+transformers==4.2.2
+sentencepiece==0.1.94
+sentenceninja
+unidecode

@@ -2,9 +2,6 @@
 fine tune Hugging Face's T5 model
 """
 
-#!pip install -q transformers==4.2.2
-#!pip install -q sentencepiece==0.1.94
-
 
 import torch
 import warnings
@@ -104,9 +101,9 @@ def main():
     SEED             = 777             
     MAX_LEN          = 100
     SUMMARY_LEN      = 100
-    TRAIN_DATA_PATH  = '/content/drive/MyDrive/split-and-rephrase/dataCSV/train300k.csv'
-    VALID_DATA_PATH  = '/content/drive/MyDrive/split-and-rephrase/dataCSV/val5k.csv'
-    MODEL_SAVE_PATH  = '/content/drive/MyDrive/split-and-rephrase/models_len_100_100_300k_utf8'
+    TRAIN_DATA_PATH  = 'train300k.csv'
+    VALID_DATA_PATH  = 'val5k.csv'
+    MODEL_SAVE_PATH  = 'models_len_100_100_300k_utf8'
     
 
     torch.manual_seed(SEED)     # pytorch random seed

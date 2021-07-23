@@ -91,7 +91,7 @@ def main(input):
     # models_len_100_100_500k   # was trained only for 1 epoch, and it needs to be trained on 1 more epoch to get better result
 
 
-    MODEL_PATH = '/content/drive/MyDrive/split-and-rephrase/models_len_100_100_300k'
+    MODEL_PATH = 'models_len_100_100_300k'
     #model = torch.load(MODEL_PATH, map_location=torch.device('cpu')) # if cpu
     model = torch.load(MODEL_PATH) # if gpu
     model = model.to(device)
